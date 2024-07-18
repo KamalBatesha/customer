@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>coustomers transactions</title>
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="text-center">coustomers transactions</h1>
+      <div class="row mt-3">
+        <div class="col-md-6 col-12 px-md-3">
+          <input
+            class="form-control"
+            type="text"
+            id="nameFilter"
+            placeholder="Filter by Name"
+          />
+        </div>
+        <div class="col-md-6 col-12 px-md-3 mt-3 mt-md-0">
+          <input
+            class="form-control"
+            type="number"
+            id="amountFilter"
+            placeholder="Filter by Amount"
+          />
+        </div>
+      </div>
+
+      <table
+        id="transactionsTable"
+        class="table table-striped text-center mt-4"
+      >
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Transactions</th>
+            <th scope="col">Graph</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="chart-container mt-5">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
